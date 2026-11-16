@@ -6,6 +6,8 @@ Built for the **LBS AI Cup 2026** (Track A – Productivity & Work).
 
 **Live app:** https://movein-copilot.streamlit.app
 
+> Personal copy of our team repo ([edd-ai-lbs/aicup-build](https://github.com/edd-ai-lbs/aicup-build)), with the full commit history.
+
 ---
 
 ## The problem
@@ -71,8 +73,8 @@ phone video ──► pipeline/media.py   ffmpeg: sound only (~0.4 MB) + keyfram
 You need Python 3.12 and two API keys: [Anthropic](https://console.anthropic.com) (Claude) and [ElevenLabs](https://elevenlabs.io) (speech-to-text only).
 
 ```bash
-git clone https://github.com/edd-ai-lbs/aicup-build.git
-cd aicup-build
+git clone https://github.com/griziottifrancesca/edd-ai.git
+cd edd-ai
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 ```
