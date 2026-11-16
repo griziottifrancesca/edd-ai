@@ -104,8 +104,31 @@ Then start the app and open http://localhost:8501:
 
 We built Edd.AI in about 20 hours, over one weekend, as a team of three.
 
-- **Anant** (technical lead): set up the repo and checked every merge into `main`. Led the Edd.AI rebrand and redesign: homepage, top tabs, green theme, issue cards, and outlining the damage on photos in the app and the PDF. Built the AI-written landlord email, the move-out PDF report and the demo fallback (saved results for the demo videos).
-- **Emma** (app and report): built the first working app: upload a room video, edit the list of issues, download the PDF. Then added the screens on top: voice notes, the "AI check" column, rewatching the moment, who sorts each problem, the admin checklist page, the agency inventory comparison and the move-out page.
-- **Francesca** (AI pipeline, content and pitch): built the AI pipeline. It splits the video into sound and pictures, keeps only the sharp, useful frames, turns speech into text with ElevenLabs, and asks Claude to find damage with strict "no false alarm" rules, a confidence level and a source for who is responsible. Also built the voice-note, agency-inventory and move-out comparison logic, the speed-ups (a 500 MB 4K video in about 16 s), the phone-friendly layout, the UK rules and checklist content (GOV.UK, Shelter, NHS), this README, the pitch and the demo script.
+### Anant – technical lead
+- Set up the repo and checked every merge into `main`
+- Led the Edd.AI rebrand and redesign: homepage, top tabs, green theme, issue cards
+- Outlined the damage on photos, in the app and in the PDF
+- AI-written landlord email
+- Move-out PDF report
+- Demo fallback (saved results for the demo videos)
+
+### Emma – app and report
+- First working app: upload a room video, edit the list of issues, download the PDF
+- Voice notes on the app screen
+- "AI check" column and rewatching the moment in the video
+- Who sorts each problem, with its source
+- Admin checklist page
+- Agency inventory comparison screen
+- Move-out page
+
+### Francesca – AI pipeline, content and pitch
+- AI pipeline: splits the video into sound and pictures and keeps only the sharp, useful frames
+- Speech-to-text with ElevenLabs
+- Damage detection with Claude: strict "no false alarm" rules, a confidence level, and a source for who is responsible
+- Voice-note, agency-inventory and move-out comparison logic
+- Speed-ups: a 500 MB 4K video in about 16 s
+- Phone-friendly layout
+- UK rules and checklist content (GOV.UK, Shelter, NHS)
+- This README, the pitch and the demo script
 
 Built with [Claude](https://www.anthropic.com/claude), [ElevenLabs](https://elevenlabs.io), [Streamlit](https://streamlit.io), OpenCV, ffmpeg, fpdf2 and pypdf.
