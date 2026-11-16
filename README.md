@@ -100,8 +100,10 @@ Then start the app and open http://localhost:8501:
 
 ## Team
 
-- **Anant**: technical lead
-- **Emma**: app and report screens
-- **Francesca**: content and pitch, and the AI pipeline (video, vision, voice, inventory, move-out)
+We built Edd.AI in about 20 hours, over one weekend, as a team of three.
+
+- **Anant** (technical lead): set up the repo and checked every merge into `main`. Led the Edd.AI rebrand and redesign: homepage, top tabs, green theme, issue cards, and outlining the damage on photos in the app and the PDF. Built the AI-written landlord email, the move-out PDF report and the demo fallback (saved results for the demo videos).
+- **Emma** (app and report): built the first working app: upload a room video, edit the list of issues, download the PDF. Then added the screens on top: voice notes, the "AI check" column, rewatching the moment, who sorts each problem, the admin checklist page, the agency inventory comparison and the move-out page.
+- **Francesca** (AI pipeline, content and pitch): built the AI pipeline. It splits the video into sound and pictures, keeps only the sharp, useful frames, turns speech into text with ElevenLabs, and asks Claude to find damage with strict "no false alarm" rules, a confidence level and a source for who is responsible. Also built the voice-note, agency-inventory and move-out comparison logic, the speed-ups (a 500 MB 4K video in about 16 s), the phone-friendly layout, the UK rules and checklist content (GOV.UK, Shelter, NHS), this README, the pitch and the demo script.
 
 Built with [Claude](https://www.anthropic.com/claude), [ElevenLabs](https://elevenlabs.io), [Streamlit](https://streamlit.io), OpenCV, ffmpeg, fpdf2 and pypdf.
